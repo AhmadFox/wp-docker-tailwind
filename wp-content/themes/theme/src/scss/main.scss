@@ -1,0 +1,93 @@
+/*
+** Create font for [ typography & icons ] SCSS
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+@import "./fonts/font-icon";
+@import "./fonts/font-text";
+@layer base {
+    html {
+        font-family: 'Inter';
+    }
+}
+
+/*
+** Import three tailwind directives
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+** Import Glide SCSS Lib 
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// 
+$glide-class: 'glide' !default;
+$glide-element-separator: '__' !default;
+$glide-modifier-separator: '--' !default;
+
+$theme-color: #4D023E;
+
+.#{$glide-class} {
+    $this: &;
+  
+    $se: $glide-element-separator;
+    $sm: $glide-modifier-separator;
+
+    &#{$se}bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: $theme-color;
+        opacity: 0.5;
+        transition: all 200ms ease-in-out;
+        margin-inline-end: 4px;
+        &#{$sm}active {
+            opacity: 1;
+        }
+    }
+}
+
+/*
+** Import AOS SCSS Lib
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+// @import "node_modules/aos/dist/aos";
+
+
+/*
+** Add Custom SCSS code
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+html, body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+  
+html {
+    @media (max-width: 1023px) {
+        margin-inline-end: 0px !important;
+        border-inline-end: 0px !important;
+    }
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.loading,
+.lazyload,
+.lazyloaded {
+    opacity: 1;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

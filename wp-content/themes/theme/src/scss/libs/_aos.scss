@@ -1,0 +1,18 @@
+/*
+** Import AOS modules
+** Created by Ahmad Gharaibeh @ahmadFox
+*/
+@import "node_modules/aos/dist/aos";
+
+
+@media(max-width: 667.98px) {
+    [data-aos="example-anim"] {
+      transform: skewX(45deg);
+      opacity: 0;
+      transition-property: transform, opacity;
+      &.aos-animate {
+        transform: skewX(0);
+        opacity: 1;
+      }
+    }
+  }

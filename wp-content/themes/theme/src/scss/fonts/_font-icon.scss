@@ -1,0 +1,189 @@
+@font-face {
+	font-family: "font-icons";
+	src: url('../fonts/font-icons.eot');
+	src: url('../fonts/font-icons.eot?#iefix') format('eot'),
+		url('../fonts/font-icons.woff2') format('woff2'),
+		url('../fonts/font-icons.woff') format('woff'),
+		url('../fonts/font-icons.ttf') format('truetype'),
+		url('../fonts/font-icons.svg#font-icons') format('svg');
+}
+
+.icon {
+	font-family: "font-icons" !important;;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-variant: normal;
+	speak: never;
+	text-decoration: none;
+	text-transform: none;
+    line-height: 1;
+    font-size: 22px;
+    display: flex;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin icon {
+	font-family: "font-icons" !important;;
+}
+
+%icon {
+	@include icon;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == angle-down {
+		$char: "\E001";
+	}
+	@if $filename == angle-left {
+		$char: "\E002";
+	}
+	@if $filename == angle-right {
+		$char: "\E003";
+	}
+	@if $filename == angle-top {
+		$char: "\E004";
+	}
+	@if $filename == bag {
+		$char: "\E005";
+	}
+	@if $filename == close {
+		$char: "\E006";
+	}
+	@if $filename == facebook {
+		$char: "\E007";
+	}
+	@if $filename == heart-fill {
+		$char: "\E008";
+	}
+	@if $filename == heart-outline {
+		$char: "\E009";
+	}
+	@if $filename == heart {
+		$char: "\E00A";
+	}
+	@if $filename == instagram {
+		$char: "\E00B";
+	}
+	@if $filename == linkedin {
+		$char: "\E00C";
+	}
+	@if $filename == messag {
+		$char: "\E00D";
+	}
+	@if $filename == message {
+		$char: "\E00E";
+	}
+	@if $filename == phone {
+		$char: "\E00F";
+	}
+	@if $filename == pin {
+		$char: "\E010";
+	}
+	@if $filename == search {
+		$char: "\E011";
+	}
+	@if $filename == share {
+		$char: "\E012";
+	}
+	@if $filename == star-fill {
+		$char: "\E013";
+	}
+	@if $filename == star-outline {
+		$char: "\E014";
+	}
+	@if $filename == twitter {
+		$char: "\E015";
+	}
+	@if $filename == user {
+		$char: "\E016";
+	}
+	@if $filename == youtube {
+		$char: "\E017";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-angle-down {
+	@include icon(angle-down);
+}
+.icon-angle-left {
+	@include icon(angle-left);
+}
+.icon-angle-right {
+	@include icon(angle-right);
+}
+.icon-angle-top {
+	@include icon(angle-top);
+}
+.icon-bag {
+	@include icon(bag);
+}
+.icon-close {
+	@include icon(close);
+}
+.icon-facebook {
+	@include icon(facebook);
+}
+.icon-heart-fill {
+	@include icon(heart-fill);
+}
+.icon-heart-outline {
+	@include icon(heart-outline);
+}
+.icon-heart {
+	@include icon(heart);
+}
+.icon-instagram {
+	@include icon(instagram);
+}
+.icon-linkedin {
+	@include icon(linkedin);
+}
+.icon-messag {
+	@include icon(messag);
+}
+.icon-message {
+	@include icon(message);
+}
+.icon-phone {
+	@include icon(phone);
+}
+.icon-pin {
+	@include icon(pin);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-share {
+	@include icon(share);
+}
+.icon-star-fill {
+	@include icon(star-fill);
+}
+.icon-star-outline {
+	@include icon(star-outline);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+.icon-user {
+	@include icon(user);
+}
+.icon-youtube {
+	@include icon(youtube);
+}
