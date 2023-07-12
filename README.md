@@ -3,15 +3,6 @@
 Docker environment to build modern, fast and optimize Wordpress themes using Gulp.js for compiling assets with Tailwind css configuration.
 
 
-
-
-
-
-## Demo
-
-Check out the basic startup the project
-- [Demo 1](https://github.com/AhmadFox)
-
 ## Features
 
 - Initialize the WordPress project using a Docker image.
@@ -60,8 +51,10 @@ this command will run the folowing task :
 
 
 ## 🚀 About Me
-My name is AHMAD GHARAIBEH
-- [@AhmadFox](https://github.com/AhmadFox) : Ahmad Gharaibeh
-- [Linkedin](https://www.linkedin.com/in/dev-ahmad-gharaibeh) : Senior Software Enginee
-I'm a senior full stack developer with +8 years expreiance in (html, css, js, php, node.js,express, sql, mongo db, scss, webpack, gulp, wordpress, docker, react.js, next.js,redux) and more librarys and framwork to build modren, fast, conveniant web and mobile apps.
+My name is AHMAD GHARAIBEH/
+I'm a senior full stack developer with +8 years expreiance in (html, css, js, php, node.js,express, sql, mongo db, scss, webpack, gulp, wordpress, docker, react.js, next.js,redux) and more librarys and framwork to build modren, fast, conveniant web and mobile apps./
+
+- [@AhmadFox](https://github.com/AhmadFox)
+- [Linkedin](https://www.linkedin.com/in/dev-ahmad-gharaibeh)
+
 
