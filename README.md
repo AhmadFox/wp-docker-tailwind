@@ -50,11 +50,12 @@ this command will run the folowing task :
 **Server:** Wordpress, phpMyAdmin, SQL
 
 
-## 🚀 About Me
-My name is AHMAD GHARAIBEH/
-I'm a senior full stack developer with +8 years expreiance in (html, css, js, php, node.js,express, sql, mongo db, scss, webpack, gulp, wordpress, docker, react.js, next.js,redux) and more librarys and framwork to build modren, fast, conveniant web and mobile apps./
+## 🥷 About Auther
+Hay 👋, I'm AHMAD GHARAIBEH\
+Software Engineering
 
-- [@AhmadFox](https://github.com/AhmadFox)
+- [Githib](https://github.com/AhmadFox)
 - [Linkedin](https://www.linkedin.com/in/dev-ahmad-gharaibeh)
+
 
 
